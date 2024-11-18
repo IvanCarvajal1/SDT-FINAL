@@ -1,0 +1,156 @@
+.gestion {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #ff0000;
+}
+
+.gestion h2, .gestion h3 {
+  color: #ff0000;
+  text-align: center;
+}
+
+.alert {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ff0000;
+  color: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+}
+
+.gestion-mesas {
+  margin-bottom: 20px;
+}
+
+.gestion-mesas input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.gestion-mesas button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gestion-mesas button:hover {
+  background-color: #b30000;
+}
+
+.mesa-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mesa-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #746743;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.mesa-btn:hover {
+  transform: scale(1.1);
+  background-color: #746743;
+}
+
+.mesa-btn button {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
+}
+
+.mesa-btn:hover button {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gestion-horas {
+  margin-top: 20px;
+}
+
+.gestion-horas input[type="date"],
+.gestion-horas input[type="time"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.gestion-horas button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.gestion-horas button:hover {
+  background-color: #ff0000;
+}
+
+.gestion-horas ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.gestion-horas ul li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gestion-horas ul li button {
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gestion-horas ul li button:hover {
+  background-color: #c82333;
+}
